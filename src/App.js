@@ -7,14 +7,15 @@ import ClearButton from './components/ClearButton.js';
 import List from './components/listComponent.js'
 import NameForm from './components/1.js'
 
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <TodoList />
-        <ClearButton />
-        <NameForm />
+        {/* <ClearButton />
+        <NameForm /> */}
         <p>
         </p>
         <a
