@@ -14,14 +14,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  width: 450px;
+  height: 20px;
+
 }
 
 .App-link {
@@ -35,4 +41,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+#textbox {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 20px;
+}
+#clear {
+  background-color: transparent;
+  color: blue;
+  border: none;
+  text-decoration: underline;
+  position: relative;
+  top: 0px;
+  right: 110px;
+  width: 45px;
+  height: 20px;
+}
+#save{
+  position: relative;
+  top: 0px;
+  left: 10px;
+  width: 45px;
+  height: 26px;
+  text-align: center;
+}
+
+p{
+  text-align: left;
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
 }

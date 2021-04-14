@@ -36,9 +36,9 @@ class TodoList extends Component{
         return (
             <div>
         <h1>Yet Another Todo List!</h1>
-        <input type='text' placeholder='' value ={this.state.todo} onChange={e =>this.updateInput("todo", e.target.value)}></input>
-        <button onClick ={()=> this.addItem()}>Save</button>
-        <button onClick ={()=> this.clearItems()}>Clear</button>
+        <input id='textbox' type='text' placeholder='' value ={this.state.todo} onChange={e =>this.updateInput("todo", e.target.value)}></input>
+        <button id='save' onClick ={()=> this.addItem()}>Save</button><br/>
+        <button id='clear' onClick ={()=> this.clearItems()}>Clear</button>
         <br/>
         <p>
             {this.state.list.map(item=>{
